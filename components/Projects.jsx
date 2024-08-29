@@ -34,7 +34,7 @@ const projects = [
 export default function Projects() {
  return (
   <>
-   <section className="mt-10 py-10 max-w-6xl mx-auto">
+   <section id="projects" className="mt-10 py-10 max-w-6xl mx-auto">
         <h1 className="text-5xl text-rose-300 text-center font-bold tracking-widest mb-4">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
           {projects.map((project) => (

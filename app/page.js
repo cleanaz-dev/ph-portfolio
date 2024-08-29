@@ -1,5 +1,6 @@
 import Contacts from "@/components/Contacts";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import React from "react";
@@ -15,6 +16,7 @@ export default function Home() {
     />
    </div>
    <div className="relative z-20">
+    <Navbar />
     <Hero />
     <Skills />
     <Projects />

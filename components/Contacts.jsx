@@ -11,18 +11,22 @@ import {
 } from "./ui/select";
 import { submitForm } from "@/lib/actions";
 import { Input } from "./ui/input";
+import { SubmitButton } from "./SubmitButton";
 
 export default function Contacts() {
  return (
-  <>
-   <section className="max-w-2xl mx-auto pt-6 px-6 pb-10 bg-white/30 rounded-lg shadow-lg ">
-    <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+  <div className="min-h-[1000px] flex flex-col justify-center items-center ">
+    <h2 className="text-4xl font-bold mb-6 text-center">Let's Connect</h2>
+    <p></p>
+   <section id="contacts" className="w-full max-w-3xl mx-auto pt-6 px-6 pb-10 bg-white/30 rounded-lg shadow-lg ">
+    <h2 className="text-2xl font-bold mb-6 text-center">Contact Form</h2>
     <form action={submitForm} className="space-y-4">
      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
       <div className="space-y-2">
        <Label htmlFor="name">Name</Label>
        <Input 
          id="name" 
+         tyoe="text"
          placeholder="Your name" 
          name="name" 
          required 
@@ -73,11 +77,9 @@ export default function Contacts() {
        className="min-h-[100px]"
       />
      </div>
-     <Button type="submit" className="w-full">
-      Send Message
-     </Button>
+     <SubmitButton />
     </form>
    </section>
-  </>
+  </div>
  );
 }
