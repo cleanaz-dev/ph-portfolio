@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "./ui/card";
+import { motion } from 'framer-motion'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -51,7 +51,7 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                   />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-md">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-black bg-opacity-90 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-md">
                     <h2 className="text-2xl font-bold text-white mb-2">
                       {project.title}
                     </h2>
