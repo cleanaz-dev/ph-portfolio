@@ -46,9 +46,9 @@ export default function Hero() {
      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
       <Image
        src={profilePicture}
-       layout="fill"
-       objectFit="cover"
+       className="object-cover"
        alt="bio-image"
+       priority
       />
      </div>
      <div className="flex justify-center mt-20">

@@ -16,9 +16,9 @@ import { SubmitButton } from "./SubmitButton";
 export default function Contacts() {
  return (
   <div className="min-h-[1000px] flex flex-col justify-center items-center ">
-    <h2 className="text-4xl font-bold mb-6 text-center">Let's Connect</h2>
-    <p></p>
-   <section id="contacts" className="w-full max-w-3xl mx-auto pt-6 px-6 pb-10 bg-white/30 rounded-lg shadow-lg ">
+    <h2 className="text-4xl font-bold mb-6 text-center text-white bg-rose-300/30 p-4 rounded-md hover:bg-teal-300/30 transition-colors duration-300">Let's Connect</h2>
+    <p className="max-w-3xl text-center pb-4">I'm always excited to discuss new projects and opportunities. Let's chat about how we can bring your web ideas to life!</p>
+   <section id="contacts" className="w-full max-w-3xl mx-auto pt-6 px-6 pb-10 bg-white/30 rounded-lg shadow-lg hover:bg-white/60 transition-colors duration-500">
     <h2 className="text-2xl font-bold mb-6 text-center">Contact Form</h2>
     <form action={submitForm} className="space-y-4">
      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
@@ -30,6 +30,7 @@ export default function Contacts() {
          placeholder="Your name" 
          name="name" 
          required 
+
         />
       </div>
       <div className="space-y-2">

@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from 'framer-motion'
 import Link from "next/link";
 import Image from "next/image";
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 const projects = [
  {
@@ -34,8 +37,11 @@ const projects = [
 export default function Projects() {
  return (
   <>
-   <section id="projects" className="mt-10 py-10 max-w-6xl mx-auto">
-        <h1 className="text-5xl text-rose-300 text-center font-bold tracking-widest mb-4">Projects</h1>
+   <section id="projects" className="mt-10 py-10 max-w-6xl mx-auto ">
+        <h1
+          style={{ fontFamily: dancingScript.style.fontFamily }} 
+          className="text-6xl text-rose-300 text-center font-bold tracking-widest mb-4">Projects</h1>
+          <p className="max-w-3xl text-center mx-auto pb-4">Each project is a journey of creativity and problem-solving. Explore my work and see how I've turned challenges into real-life solutions!</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
           {projects.map((project) => (
             <div

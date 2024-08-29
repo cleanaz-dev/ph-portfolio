@@ -3,6 +3,7 @@
 import React from "react";
 import { useFormStatus } from "react-dom";
 import { Button } from "./ui/button";
+import { Loader2Icon } from "lucide-react";
 
 export function SubmitButton() {
   const { pending } = useFormStatus();
@@ -16,7 +17,7 @@ export function SubmitButton() {
       ) : (
         <Button 
           type="submit" 
-          className="bg-gradient-to-r from-rose-100 to-teal-100 flex w-full">
+          className="bg-white text-black flex w-full hover:text-teal-500 hover:bg-slate-50">
           <span>Submit Form </span>
         </Button>
       )}

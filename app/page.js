@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Home() {
  return (
-  <div className="relative bg-gradient-to-r from-rose-100 to-teal-100 px-10 md:px-20 lg:px-40 pb-20">
+  <div className="relative bg-gradient-to-r from-rose-100 to-teal-100 px-10 md:px-20 lg:px-40 pb-20 dark:bg-black">
    <div className="absolute inset-0 z-10">
     <img
      src="/animate-bg.svg"
