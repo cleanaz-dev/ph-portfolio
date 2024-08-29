@@ -1,3 +1,5 @@
+"use  server";
+
 import Contacts from "@/components/Contacts";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";

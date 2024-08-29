@@ -15,10 +15,10 @@ export default function Navbar() {
  return (
   <>
    <nav className="py-10 mb-12 flex justify-between dark:text-white bg-white/30 px-10 rounded-b-md ">
-    <h1 className="font-burtons text-xl">cleanazcoding</h1>
+    <h1 className="font-burtons lg:text-xl">cleanazcoding</h1>
     <ul className="flex items-center">
      {navItems.map((item) => (
-      <li key={item.name} className="mx-4">
+      <li key={item.name} className="mx-4 hidden lg:block">
        <Link
         href={item.href}
         className="hover:text-teal-500 transition-colors duration-300"
@@ -27,18 +27,20 @@ export default function Navbar() {
        </Link>
       </li>
      ))}
-     <li className="mx-4">
+     {/* <li className="mx-4">
       <MoonStar
        onClick={() => setDarkMode(!darkMode)}
        className=" cursor-pointer text-2xl"
       />
-     </li>
+     </li> */}
      <li>
       <Link
-       className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+       className="text-sm lg:text-xl"
        href="#contacts"
       >
+       <span className="bg-teal-500 text-white  px-4 py-2 border-none rounded-md ml-8 hover:bg-cyan-500/50 transition-colors duration-300">
        Let's Connect!
+       </span>
       </Link>
      </li>
     </ul>

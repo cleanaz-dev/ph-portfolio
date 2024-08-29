@@ -11,7 +11,7 @@ export function SubmitButton() {
   return (
     <>
      {pending ? (
-        <Button disabled className="">
+        <Button disabled variant="ghost" className="flex w-full text-center">
           <Loader2Icon className="w-4 h-4 animate-spin" />
         </Button>
       ) : (

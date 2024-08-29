@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./ui/button";
+
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import {
@@ -9,6 +9,7 @@ import {
  SelectTrigger,
  SelectValue,
 } from "./ui/select";
+
 import { submitForm } from "@/lib/actions";
 import { Input } from "./ui/input";
 import { SubmitButton } from "./SubmitButton";
@@ -26,11 +27,11 @@ export default function Contacts() {
        <Label htmlFor="name">Name</Label>
        <Input 
          id="name" 
-         tyoe="text"
+         type="text"
          placeholder="Your name" 
-         name="name" 
+         name="name"
+         autocomplete="name" 
          required 
-
         />
       </div>
       <div className="space-y-2">
@@ -39,6 +40,7 @@ export default function Contacts() {
         id="email"
         type="email"
         name="email"
+        autocomplete="email" 
         placeholder="your.email@example.com"
         required
        />
@@ -49,6 +51,7 @@ export default function Contacts() {
         id="mobile"
         name="mobile"
         type="tel"
+        autocomplete="tel" 
         placeholder="Your mobile number"
         required
        />
