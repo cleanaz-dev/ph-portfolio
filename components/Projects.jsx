@@ -27,7 +27,7 @@ const projects = [
   title: "Call AZ",
   description: "Manages inbound calls with AI, producing call transcripts, audio URLs, and corresponding tickets, all accessible through a dashboard.",
   url: "https://call-az.vercel.app/",
-  image: "/Call-az.png",
+  image: "/call-az.png",
  },
 ];
 
