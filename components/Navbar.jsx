@@ -14,8 +14,8 @@ export default function Navbar() {
   const [darkMode, setDarkMode] = React.useState(false);
  return (
   <>
-   <nav className="py-10 mb-12 flex justify-between dark:text-white bg-white/30 px-10 rounded-b-md ">
-    <h1 className="font-burtons lg:text-xl">cleanazcoding</h1>
+   <nav className="py-10 mb-12 flex justify-between dark:text-white bg-white/30 px-4 md:px-10 rounded-b-md ">
+    <h1 className="flex text-sm lg:text-xl">cleanazcoding</h1>
     <ul className="flex items-center">
      {navItems.map((item) => (
       <li key={item.name} className="mx-4 hidden lg:block">
@@ -35,10 +35,10 @@ export default function Navbar() {
      </li> */}
      <li>
       <Link
-       className="text-sm lg:text-xl"
+       className="text-xs md:text-lg lg:text-xl"
        href="#contacts"
       >
-       <span className="bg-teal-500 text-white  px-4 py-2 border-none rounded-md ml-8 hover:bg-cyan-500/50 transition-colors duration-300">
+       <span className="md:bg-teal-500 md:text-white md:px-4 md:py-2 border-none rounded-md ml-8 hover:bg-cyan-500/50 transition-colors duration-300 underline md:no-underline">
        Let's Connect!
        </span>
       </Link>

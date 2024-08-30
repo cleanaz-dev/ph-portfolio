@@ -70,7 +70,7 @@ const ProjectCard = ({ title, technologies, description, image, liveLink }) => (
   </div>
 );
 const Portfolio = () => (
-  <div className="container mx-auto px-4 py-8">
+  <div className="">
     {projects.map((project, index) => (
       <ProjectCard 
         key={index}

@@ -30,7 +30,7 @@ export default function Contacts() {
          type="text"
          placeholder="Your name" 
          name="name"
-         autocomplete="name" 
+         autoComplete="name" 
          required 
         />
       </div>
@@ -40,7 +40,7 @@ export default function Contacts() {
         id="email"
         type="email"
         name="email"
-        autocomplete="email" 
+        autoComplete="email" 
         placeholder="your.email@example.com"
         required
        />
@@ -51,7 +51,7 @@ export default function Contacts() {
         id="mobile"
         name="mobile"
         type="tel"
-        autocomplete="tel" 
+        autoComplete="tel" 
         placeholder="Your mobile number"
         required
        />
