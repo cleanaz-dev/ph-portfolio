@@ -13,10 +13,10 @@ export default function Hero() {
   <>
    <section id="home" className="min-h-screen max-w-6xl mx-auto">
     <div className="text-center p-10 py-10">
-     <h2 className="text-5xl py-2 text-teal-500 font-bold dark:text-teal-400 md:text-6xl">
+     <h2 className="text-3xl md:text-5xl py-2 text-teal-500 font-bold dark:text-teal-400 ">
       Paul Hendricks
      </h2>
-     <h3 className="flex text-center justify-center text-2xl py-2 dark:text-white md:text-3xl">
+     <h3 className="flex text-center justify-center text-lg py-2 dark:text-white md:text-3xl">
       <span className="mr-2">Web Developer &{" "}</span>
       <Typewriter 
        

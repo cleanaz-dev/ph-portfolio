@@ -29,12 +29,12 @@ export default function Skills() {
     <div>
      <h1 className="text-teal-500  text-5xl font-bold mb-4 tracking-widest">Skills</h1>
      <p className="max-w-3xl mb-6 leading-relaxed  p-6 text-slate-500 rounded-md">
-     Web development isn't just my job—it's my passion. I love diving into complex projects and bringing ideas to life through code. React and Next.js are my go-to tools for creating slick, responsive frontends, while Prisma and MongoDB help me build rock-solid backends. My goal? Crafting web apps that not only look great but feel intuitive and seamless to use. I'm always pushing my boundaries, whether it's mastering AWS deployment or exploring the exciting world of AI integration. JavaScript is my trusty sidekick throughout it all. Want to see what's in my developer toolbox? Take a spin through the carousel—it'll give you a peek at the tech that gets me excited to code every day.
+     Web development is my true passion. I thrive on building dynamic, user-friendly apps using a diverse tech stack. React and Next.js power my frontends, while Prisma and MongoDB handle the backend heavy lifting. I'm all about creating seamless experiences, from intuitive interfaces to robust server-side logic. My toolkit includes cloud deployment solutions and AI integration, with JavaScript as my primary language. Curious about my go-to tools? Check out the carousel for a quick tour of the tech that fuels my coding adventures.
      </p>
     
     </div>
     <Carousel
-     className="w-full max-w-3xl"
+     className="md:w-full max-w-3xl w-2/3"
      plugins={[
       Autoplay({
        delay: 2000,

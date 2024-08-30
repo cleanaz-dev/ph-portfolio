@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Badge } from './ui/badge';
+import { Link2 } from 'lucide-react';
 
 const projects = [
  {
@@ -36,30 +37,33 @@ const projects = [
 ];
 
 const ProjectCard = ({ title, technologies, description, image, liveLink }) => (
-  <div className="flex flex-col md:flex-row bg-white/30 rounded-lg shadow-md overflow-hidden mb-8 max-h-64 hover:bg-gradient-to-tr hover:from-teal-400/20 hover:to-rose-500/20 hover:shadow-2xl">
-    <div className="md:w-1/3 w-full h-48 md:h-auto overflow-hidden p-6">
-      {/* Fixed dimensions and object-cover for consistent image sizing */}
-      <Image 
-        src={image} 
-        alt={title} 
-        width={300} 
-        height={200} 
-        className="w-full h-full object-cover rounded-lg" 
+  <div className="flex flex-col sm:flex-col md:flex-row bg-white/30 rounded-lg shadow-md overflow-hidden mb-8 min-h-64
+  md:max-h-64 hover:bg-gradient-to-tr hover:from-teal-400/20 hover:to-rose-500/20 hover:shadow-2xl transition-all duration-300">
+    {/* Image section */}
+    <div className="w-full h-72 md:h-auto md:w-1/3 p-4">
+      <Image
+        src={image}
+        alt={title}
+        width={300}
+        height={200}
+        className="w-full h-full object-cover rounded-lg"
       />
     </div>
-    <div className="md:w-2/3 p-6 flex flex-col justify-between">
+    
+    {/* Content section */}
+    <div className="flex flex-col justify-between p-6 md:w-2/3">
       <h2 className="text-2xl font-bold mb-2 text-slate-600">{title}</h2>
       <p className="text-gray-700 mb-4">{description}</p>
-      <div className="mb-4">
+      <div className="mb-4 flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
-          <Badge key={index} variant="outline" className="text-sm mr-2 mb-2 text-purple-400">
+          <Badge key={index} variant="outline" className="text-sm text-purple-400 border-purple-400">
             {tech}
           </Badge>
         ))}
       </div>
-      <div className="flex space-x-4">
-        <Link href={liveLink} className="text-purple-600 hover:text-purple-800 font-semibold">
-          <span>Live</span>
+      <div className="flex space-x-4 hover:text-white">
+        <Link href={liveLink} className="text-purple-600  font-semibold">
+          <span className='font-bold flex gap-2 hover:font-bold'>Live <Link2 /></span>
         </Link>
       </div>
     </div>
