@@ -6,23 +6,27 @@ import { Spade, Heart, Diamond, Club, MoonStar } from "lucide-react";
 import Image from "next/image";
 import profilePicture from "../public/profile.jpg";
 import Link from "next/link";
-
-
-
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
-
-
  return (
   <>
    <section id="home" className="min-h-screen max-w-6xl mx-auto">
-    
     <div className="text-center p-10 py-10">
      <h2 className="text-5xl py-2 text-teal-500 font-bold dark:text-teal-400 md:text-6xl">
       Paul Hendricks
      </h2>
-     <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-      Web Developer & Entrepeneur
+     <h3 className="flex text-center justify-center text-2xl py-2 dark:text-white md:text-3xl">
+      <span className="mr-2">Web Developer &{" "}</span>
+      <Typewriter 
+       
+       options={{
+        strings: ['Entrepreneur', 'Creator', 'Designer', 'Innovator'],
+        autoStart: true,
+        loop: true,
+        
+       }}
+      />
      </h3>
      <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
       Freelance <span className="text-teal-500 font-semibold">coder</span> and{" "}
@@ -34,10 +38,10 @@ export default function Hero() {
       </span>
      </p>
      <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-      <Club className="animate-spin hover:animate-none "/>
-      <Spade className="animate-spin hover:animate-none"/>
-      <Diamond className="animate-spin hover:animate-none"/>
-      <Heart className="animate-spin hover:animate-none"/>
+      <Club className="animate-spin hover:animate-none " />
+      <Spade className="animate-spin hover:animate-none" />
+      <Diamond className="animate-spin hover:animate-none" />
+      <Heart className="animate-spin hover:animate-none" />
 
       {/* <AiFillTwitterCircle />
               <AiFillLinkedin />

@@ -29,7 +29,7 @@ export default function Skills() {
     <div>
      <h1 className="text-teal-500  text-5xl font-bold mb-4 tracking-widest">Skills</h1>
      <p className="max-w-3xl mb-6 leading-relaxed  p-6 text-slate-500 rounded-md">
-     My passion is building dynamic, scalable web apps with a diverse tech stack. I work with React and Next.js for frontends, Prisma and MongoDB for backends, and create seamless user experiences. My skills include AWS deployment and AI integration, primarily using JavaScript. Check out the carousel to see my key tools.
+     Web development isn't just my job—it's my passion. I love diving into complex projects and bringing ideas to life through code. React and Next.js are my go-to tools for creating slick, responsive frontends, while Prisma and MongoDB help me build rock-solid backends. My goal? Crafting web apps that not only look great but feel intuitive and seamless to use. I'm always pushing my boundaries, whether it's mastering AWS deployment or exploring the exciting world of AI integration. JavaScript is my trusty sidekick throughout it all. Want to see what's in my developer toolbox? Take a spin through the carousel—it'll give you a peek at the tech that gets me excited to code every day.
      </p>
     
     </div>

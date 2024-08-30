@@ -3,36 +3,10 @@ import { motion } from 'framer-motion'
 import Link from "next/link";
 import Image from "next/image";
 import { Dancing_Script } from "next/font/google";
+import Portfolio from "./Portfolio";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
-const projects = [
- {
-  title: "Ticket Genie",
-  description:
-   "A standard ticketing app enhanced with Anthropic AI for generating responses based on issue.",
-  url: "https://ticket-genie.vercel.app/",
-  image: "/ticket-genie.png",
- },
- {
-  title: "Barber AZ",
-  description: "Allows users to book appointments via a VoiceFlow chatbot, with email confirmations and AI-driven customer service. Includes an admin dashboard.",
-  url: "https://barber-az.vercel.app/",
-  image: "/barber-az.png",
- },
- {
-  title: "Budget Buddy",
-  description: "Enables users to set budgets, upload receipts, and receive AI analysis of their spending.",
-  url: "https://budget-buddy-gamma.vercel.app/",
-  image: "/budget-az.png",
- },
- {
-  title: "Call AZ",
-  description: "Manages inbound calls with AI, producing call transcripts, audio URLs, and corresponding tickets, all accessible through a dashboard.",
-  url: "https://call-az.vercel.app/",
-  image: "/call-az.png",
- },
-];
 
 export default function Projects() {
  return (
@@ -42,7 +16,8 @@ export default function Projects() {
           style={{ fontFamily: dancingScript.style.fontFamily }} 
           className="text-6xl text-rose-300 text-center font-bold tracking-widest mb-4 drop-shadow-lg">Projects</h1>
           <p className="max-w-3xl text-center mx-auto pb-4">Each project is a journey of creativity and problem-solving. Explore my work and see how I've turned challenges into real-life solutions!</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+          <Portfolio />
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -69,7 +44,7 @@ export default function Projects() {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
   </>
  );

@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Paul Hendricks Portfolio",
+  title: "Paul Hendricks Dev",
   description: "Clean AZ Coding Dev",
 };
 
