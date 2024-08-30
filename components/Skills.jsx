@@ -45,7 +45,7 @@ export default function Skills() {
       {skills.map((skill, index) => (
        <CarouselItem key={index} className=" md:basis-1/2 lg:basis-1/3">
         <div className="">
-         <Card className="h">
+         <Card className="mx-2">
           <CardContent className="flex flex-col items-center justify-center p-6">
            <Image
             src={skill.logo}
